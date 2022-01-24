@@ -30,6 +30,66 @@
         </form>
     </section>
 
+    <section>
+        <h2>Calcula el perimetro de un triangulo</h2>
+        <form>
+            <label for="InputLado1">
+                Escribe el lado 1 del triangulo:
+            </label>
+            <input id="InputLado1" type="number">
+
+            <label for="InputLado2">
+                Escribe el lado 2 del triangulo:
+            </label>
+            <input id="InputLado2" type="number">
+
+            <label for="InputBase">
+                Escribe la base del triangulo:
+            </label>
+            <input id="InputBase" type="number">
+
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular el perimetro
+            </button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcula el area de un triangulo </h2>
+        <form>
+            <label for="InputBaseArea">
+                Escribe la base del triangulo:
+            </label>
+            <input id="InputBaseArea" type="number">
+            
+            <label for="InputAltura">
+                Escribe la altura del triangulo
+            </label>
+            <input id="InputAltura" type="number">
+
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcular el area
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcula el area y perimetro de un circulo</h2>
+        <form>
+            <label for="InputCirculo">
+                Escribe el diametro del cirulo:
+            </label>
+            <input id="InputCirculo" type="number" />
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el area
+            </button>
+        </form>
+    </section>
+
     <script src="./figuras.js"></script>
 </body>
 </html>
