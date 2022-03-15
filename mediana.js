@@ -4,7 +4,15 @@ function agregarNumero() {
     const valor = Number(valueNumero);
 
     var newlista = lista1.push(valor);
+
+    //ordenar lista
+    function ordenar(a,b) { return a - b;}
+    lista1.sort(ordenar);
+
     console.log(lista1);
+
+    const listaP = document.getElementById("ListaP");
+    listaP.innerText ="Los datos de la lista son: " + lista1;
 
 
     const mitadLista1 = parseInt(lista1.length / 2);
